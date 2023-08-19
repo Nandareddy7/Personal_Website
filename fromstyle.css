@@ -1,0 +1,101 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center center/cover;
+}
+
+.container form {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container form h1 {
+    color: #fdfdfd;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input {
+    flex: 1;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #a24a4a;
+}
+
+.input-group input::placeholder {
+    color: #a48dc7;
+}
+
+.container form h4 {
+    color: #a48dc7;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #de2f2f;
+    color: #08071d;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline:#a48dc7;
+    width: 100%;
+    min-height: 80px;
+    max-height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    border: none;
+    background: #a24a4a;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #f5f0f0;
+    padding: 10px 20px;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 1s;
+}
+

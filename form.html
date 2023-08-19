@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact Us</title>
+    <link rel="stylesheet" href="fromstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="submit-to-google-sheet">
+            <h1>Contact Us</h1>
+            <div class="input-group">
+                <input type="text" id="firstName" placeholder="First Name" name="First name" required>
+                <input type="text" id="lastName" placeholder="Last Name" name="Last name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" name="Email" required>
+                <input type="tel" id="mobile" placeholder="Mobile" name="Mobile" required>
+            </div>
+            <h4>Type Your Message Here...</h4>
+            <textarea name="Message" required></textarea>
+            <button type="submit" id="button">Send</button>
+        </form>
+    </div>
+
+    <script src="formscript.js"></script>
+</body>
+
+</html>
